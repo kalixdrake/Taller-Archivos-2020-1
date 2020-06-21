@@ -2,7 +2,7 @@ import datetime
 import localidades
 def validar_fechas():
     rango_fechas = []
-    fecha_1 = 
+    fecha_1 = 0 
 
 def niidea(lineas):
     
