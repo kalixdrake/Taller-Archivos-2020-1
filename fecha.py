@@ -1,11 +1,9 @@
+import datetime
+import localidades
 def validar_fechas():
-    fecha_1 = []
-    fecha_2 = []
-    entrada_1 = input("Porfavor ingrese el dia de la fecha inicial: ")
-    if int(entrada_1)<1 or int(entrada_1)>31 or len(entrada_1)>2:
-        print("Porfavor ingrese un dia valido ")
-        entrada_1 = input("Porfavor ingrese el dia de la fecha inicial: ")
-    entrada_2 = input("Porfavor ingrese fecha final en formato dd/mm/aaa")
+    rango_fechas = []
+    fecha_1 = 
+
 def niidea(lineas):
     
     lineas_ordenadas = sorted(lineas)

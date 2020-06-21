@@ -61,6 +61,7 @@ def contagio_por_localidad(lineas):
             opcion = int(input("Ingrese la estadistica que desea conocer: "))
         except ValueError:
             print("Debe ingresar un número entero, por favor intentelo de nuevo \n")
+            
         if opcion == 1:
             for i in range(1, len(lineas)):
                 if lineas[i][2] not in localidades:
@@ -68,6 +69,7 @@ def contagio_por_localidad(lineas):
                 localidades[lineas[i][2]] += 1
             lista_de_localidades()
             elegir_localidad(lista, localidades)
+
         if opcion == 2:
             for i in range(1, len(lineas)):
                 if lineas[i][2] not in localidades:
