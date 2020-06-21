@@ -1,7 +1,7 @@
 import localidades
 import fecha
 import os
-
+import estadisticas_por_caso
 def leer_datos():
     """Abre el archivo Bogota_covid19.csv en modo lectura, posterior a esto crea una lista donde cada
     linea corresponde a un string, para luego crear una sublista por linea, pudiendo tomar los datos
@@ -52,6 +52,12 @@ def main():
         if estadística == 3:
             try:
                 fecha.niidea(lineas)
+            except NameError:
+                print("Primero deben ser leidos los datos del archivo para que el programa funcione \n")
+        
+        if estadística == 5:
+            try:
+                estadisticas_por_caso.main(lineas)
             except NameError:
                 print("Primero deben ser leidos los datos del archivo para que el programa funcione \n")
 main()
